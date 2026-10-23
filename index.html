@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A static website about the history of Linux — from Unix and the GNU Project to the Linux kernel, distributions, Android, cloud and containers." />
+  <title>The History of Linux</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="logo" href="#top">🐧 Linux History</a>
+      <ul class="nav-links">
+        <li><a href="#origins">Origins</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#people">Key People</a></li>
+        <li><a href="#distros">Distributions</a></li>
+        <li><a href="#today">Linux Today</a></li>
+      </ul>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle dark / light theme">🌙</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero container">
+      <p class="eyebrow">Open Source • Since 1991</p>
+      <h1>The History of Linux</h1>
+      <p class="hero-text">
+        What started as a student's hobby project — "just a hobby, won't be big and
+        professional" — became the operating system kernel that powers most of the
+        internet, every Android phone, the world's supercomputers, and the cloud.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#timeline">Explore the Timeline</a>
+        <a class="btn btn-secondary" href="#origins">Start from the Beginning</a>
+      </div>
+      <div class="stats" aria-label="Linux facts">
+        <div class="stat"><strong>1991</strong><span>First kernel release</span></div>
+        <div class="stat"><strong>100%</strong><span>Top 500 supercomputers run Linux</span></div>
+        <div class="stat"><strong>3B+</strong><span>Android devices use the Linux kernel</span></div>
+      </div>
+    </section>
+
+    <!-- Origins -->
+    <section id="origins" class="section container">
+      <h2>Origins: Unix and GNU</h2>
+      <p>
+        Linux did not appear from nowhere. In 1969, Ken Thompson and Dennis Ritchie
+        at Bell Labs created <strong>Unix</strong>, an influential operating system whose
+        ideas — files, processes, pipes and a portable C codebase — shaped everything after it.
+      </p>
+      <p>
+        In 1983, <strong>Richard Stallman</strong> launched the <strong>GNU Project</strong> to build a
+        completely free, Unix-like operating system, and founded the Free Software
+        Foundation in 1985. GNU produced essential tools (GCC compiler, Bash shell,
+        core utilities) and the <strong>GPL licence</strong> — but its own kernel, Hurd,
+        was not ready.
+      </p>
+      <p>
+        The missing piece arrived in 1991 from Helsinki, Finland.
+      </p>
+    </section>
+
+    <!-- Timeline -->
+    <section id="timeline" class="section container">
+      <h2>Timeline of Linux History</h2>
+      <p class="section-intro">Click a card heading to expand it. Use the filter to jump between eras.</p>
+
+      <div class="filters" role="group" aria-label="Filter timeline by era">
+        <button class="filter-btn active" data-filter="all" type="button">All</button>
+        <button class="filter-btn" data-filter="early" type="button">Early Years</button>
+        <button class="filter-btn" data-filter="growth" type="button">Growth</button>
+        <button class="filter-btn" data-filter="modern" type="button">Modern Era</button>
+      </div>
+
+      <div class="timeline" id="timelineList">
+        <article class="event" data-era="early">
+          <h3><button class="event-toggle" type="button">1969 — Unix is Born</button></h3>
+          <p class="event-body">Unix is created at Bell Labs. Its design philosophy influences Linux and almost every modern operating system.</p>
+        </article>
+        <article class="event" data-era="early">
+          <h3><button class="event-toggle" type="button">1983 — The GNU Project Begins</button></h3>
+          <p class="event-body">Richard Stallman announces GNU, aiming for a free Unix-like system, and later releases the GNU General Public License (GPL).</p>
+        </article>
+        <article class="event" data-era="early">
+          <h3><button class="event-toggle" type="button">1987 — MINIX</button></h3>
+          <p class="event-body">Andrew Tanenbaum releases MINIX, a small Unix-like system for teaching. A Finnish student named Linus Torvalds uses it — and wants more.</p>
+        </article>
+        <article class="event" data-era="early">
+          <h3><button class="event-toggle" type="button">25 Aug 1991 — "Just a Hobby"</button></h3>
+          <p class="event-body">Linus Torvalds posts to the comp.os.minix newsgroup: "I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu)".</p>
+        </article>
+        <article class="event" data-era="early">
+          <h3><button class="event-toggle" type="button">17 Sep 1991 — Linux 0.01</button></h3>
+          <p class="event-body">The first Linux kernel, version 0.01 (about 10,000 lines of code), is released on the internet.</p>
+        </article>
+        <article class="event" data-era="early">
+          <h3><button class="event-toggle" type="button">1992 — Linux under the GPL</button></h3>
+          <p class="event-body">Linux is re-licensed under the GNU GPL. GNU tools + the Linux kernel form a complete free operating system, and the first distributions appear.</p>
+        </article>
+        <article class="event" data-era="growth">
+          <h3><button class="event-toggle" type="button">1993 — Debian &amp; Slackware</button></h3>
+          <p class="event-body">Slackware and Debian, two of the oldest surviving distributions, are released. Debian's community model later becomes the base for Ubuntu and many others.</p>
+        </article>
+        <article class="event" data-era="growth">
+          <h3><button class="event-toggle" type="button">1994 — Linux 1.0</button></h3>
+          <p class="event-body">Linux kernel 1.0 is released. Red Hat is founded around the same period, bringing commercial support to Linux.</p>
+        </article>
+        <article class="event" data-era="growth">
+          <h3><button class="event-toggle" type="button">1996 — Tux the Penguin</button></h3>
+          <p class="event-body">Tux, drawn by Larry Ewing, becomes the official Linux mascot.</p>
+        </article>
+        <article class="event" data-era="growth">
+          <h3><button class="event-toggle" type="button">1998–1999 — Big Business Arrives</button></h3>
+          <p class="event-body">IBM, Oracle and other major companies announce Linux support. In 1999 Red Hat's IPO becomes one of the biggest first-day gains in Wall Street history at the time.</p>
+        </article>
+        <article class="event" data-era="growth">
+          <h3><button class="event-toggle" type="button">2004 — Ubuntu</button></h3>
+          <p class="event-body">Canonical releases Ubuntu, focused on ease of use — "Linux for human beings" — bringing Linux to millions of desktop users.</p>
+        </article>
+        <article class="event" data-era="modern">
+          <h3><button class="event-toggle" type="button">2005 — Git</button></h3>
+          <p class="event-body">Torvalds creates Git to manage kernel development. Git goes on to transform how the whole world writes software.</p>
+        </article>
+        <article class="event" data-era="modern">
+          <h3><button class="event-toggle" type="button">2007–2008 — Android</button></h3>
+          <p class="event-body">Google's Android, built on the Linux kernel, is announced and the first Android phone ships in 2008. Linux quietly enters billions of pockets.</p>
+        </article>
+        <article class="event" data-era="modern">
+          <h3><button class="event-toggle" type="button">2013–2014 — Docker &amp; Kubernetes</button></h3>
+          <p class="event-body">Docker popularises Linux containers (2013) and Google open-sources Kubernetes (2014). Linux becomes the foundation of modern cloud infrastructure.</p>
+        </article>
+        <article class="event" data-era="modern">
+          <h3><button class="event-toggle" type="button">2017 — 100% of Supercomputers</button></h3>
+          <p class="event-body">By November 2017, all 500 of the world's fastest supercomputers run Linux.</p>
+        </article>
+        <article class="event" data-era="modern">
+          <h3><button class="event-toggle" type="button">Today — Everywhere</button></h3>
+          <p class="event-body">Linux powers most web servers and cloud instances, Android devices, smart TVs, routers, cars, spacecraft — and even Windows, through WSL (Windows Subsystem for Linux).</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- People -->
+    <section id="people" class="section container">
+      <h2>Key People</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Linus Torvalds</h3>
+          <p>Creator of the Linux kernel (1991) and Git (2005). He still leads kernel development today.</p>
+        </article>
+        <article class="card">
+          <h3>Richard Stallman</h3>
+          <p>Founder of the GNU Project and the Free Software Foundation; author of the GPL that Linux is licensed under.</p>
+        </article>
+        <article class="card">
+          <h3>Ken Thompson &amp; Dennis Ritchie</h3>
+          <p>Creators of Unix and the C programming language — the ground Linux was built on.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Distros -->
+    <section id="distros" class="section container">
+      <h2>Famous Distributions</h2>
+      <ul class="distro-list">
+        <li><strong>Debian</strong> (1993) — community-driven, base for Ubuntu.</li>
+        <li><strong>Slackware</strong> (1993) — the oldest distribution still maintained.</li>
+        <li><strong>Red Hat / Fedora / CentOS Stream</strong> — enterprise Linux.</li>
+        <li><strong>Ubuntu</strong> (2004) — popular desktop and server distribution.</li>
+        <li><strong>Arch Linux</strong> (2002) — rolling release, do-it-yourself philosophy.</li>
+        <li><strong>Android</strong> (2008) — the most widely used Linux-based system in the world.</li>
+      </ul>
+    </section>
+
+    <!-- Today -->
+    <section id="today" class="section container">
+      <h2>Linux Today</h2>
+      <p>
+        The Linux kernel now contains over 28 million lines of code and is developed
+        by thousands of contributors from hundreds of companies. It is a textbook
+        example of how open, collaborative development can out-build any single organisation.
+      </p>
+      <blockquote>
+        "I'm doing a (free) operating system (just a hobby, won't be big and professional like gnu)"
+        <cite>— Linus Torvalds, 25 August 1991</cite>
+      </blockquote>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>🐧 The History of Linux — a static website built with HTML, CSS &amp; JavaScript.</p>
+      <p><a href="#top">Back to top ↑</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
